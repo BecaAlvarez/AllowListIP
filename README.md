@@ -40,6 +40,8 @@ O script:
 
 ## ✅ Melhorias Futuras (ideias)
 
+- Melhoria na arquitetura do código e implementação de práticas de segurança
+  
 - Salvar a nova lista atualizada diretamente em arquivo
 
 - Gerar logs de auditoria
