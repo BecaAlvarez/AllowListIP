@@ -1,11 +1,7 @@
-"""
-Atualizar regularmente o arquivo que identifica os funcionários que podem acessar conteúdo restrito. O conteúdo do arquivo é baseado em quem está trabalhando com registros pessoais de pacientes. Os funcionários têm acesso restrito com base em seu endereço IP. Há uma lista de permissões para endereços IP autorizados a se conectar à sub-rede restrita. Há também uma lista de remoção que identifica quais funcionários você deve remover dessa lista de permissão.
-A tarefa é verificar se a lista de permissão contém algum endereço IP identificado na lista de remoção. Em caso afirmativo, você deve remover esses endereços IP do arquivo que contém a lista de permissões e atualiza-lo.
-"""
-
 import os
 
 current_dir = os.path.dirname(__file__)
+
 import_file = os.path.join(current_dir, "allow_list.txt")
 import_file_remove = os.path.join(current_dir, "remove_list.txt")
 updated_ip_addresses = []
